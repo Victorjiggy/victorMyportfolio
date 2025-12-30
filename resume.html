@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+  <!-- Resume Section -->
+  <section class="bg-[#232323] rounded-lg shadow-xl p-6 md:p-10 max-w-3xl w-full mx-4">
+    <div class="text-center mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-white">My Resume</h1>
+      <p class="text-gray-400 mt-2 text-sm md:text-base">Download or view my professional resume below</p>
+    </div>
+
+    <!-- Resume Image -->
+    <div class="flex justify-center">
+      <img src="assets/chukwuemekaVictorResume.pdf" alt="My Resume" class="w-full max-w-md rounded-lg shadow-lg object-cover">
+    </div>
+
+    <!-- Download Button -->
+    <div class="text-center mt-6">
+      <!-- Use download attribute and correct relative path -->
+      <a href="assets/chukwuemekaVictorResume.pdf" download="My_Resume.png" class="bg-green-400 text-gray-900 font-semibold px-6 py-2 rounded-md hover:bg-green-500 transition-colors">
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
