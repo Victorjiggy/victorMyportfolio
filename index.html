@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>victor Chukwuemeka — Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&family=Inter:wght@300;400;600&display=swap');
+    body {
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+  <main class="min-h-screen">
+    <!-- NAV -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex items-center justify-between">
+  <!-- Left: Logo + Desktop Nav -->
+  <div class="flex items-center gap-6">
+    <!-- Logo -->
+    <div class="text-white font-semibold text-2xl sm:text-3xl">
+      victor
+      <span class="text-gray-400 text-xl sm:text-2xl hover:text-emerald-400">
+        Chukwuemeka
+      </span>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-6 text-sm text-gray-400">
+      <a class="hover:text-green-300" href="#services">Services</a>
+      <a class="hover:text-green-300" href="#works">Works</a>
+      <a class="hover:text-green-300" href="#notes">Skills</a>
+      <a class="hover:text-green-300" href="#testimonial">Testimonial</a>
+      <a class="hover:text-green-300" href="#contact">Contacts</a>
+    </nav>
+  </div>
+
+  <!-- Right: Actions (Desktop) -->
+  <div class="hidden sm:flex items-center gap-4">
+    <!-- Download CV -->
+    <a
+      href="/assets/chukwuemekaVictorResume.pdf"
+      download="Victor-Jiggy-CV"
+      class="px-3 py-1 text-sm border rounded border-gray-700 text-gray-400 hover:bg-emerald-400 transition hover:text-black"
+    >
+      Download CV <i class="fas fa-download"></i>
+    </a>
+
+    <!-- Email -->
+    <a
+      href="mailto:victorjiggy12@gmail.com"
+      class="group w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-emerald-400 transition"
+    >
+      <i class="fas fa-envelope text-green-300 group-hover:text-black"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Menu Button -->
+  <button
+    id="menuBtn"
+    class="md:hidden text-white text-2xl focus:outline-none"
+    aria-label="Open menu"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+    </header>
+
+<!-- Mobile Navigation -->
+<nav
+  id="mobileMenu"
+  class="hidden md:hidden max-w-7xl mx-auto px-4 sm:px-6 pb-6 space-y-4 text-gray-400"
+>
+  <a class="block hover:text-green-300" href="#services">Services</a>
+  <a class="block hover:text-green-300" href="#works">Works</a>
+  <a class="block hover:text-green-300" href="#notes">Skills</a>
+  <a class="block hover:text-green-300" href="#testimonial">Testimonial</a>
+  <a class="block hover:text-green-300" href="#contact">Contacts</a>
+
+  <div class="flex gap-4 pt-4">
+    <a
+      href="/assets/chukwuemekaVictorResume.pdf"
+      download="Victor-Jiggy-CV"
+      class="px-3 py-2 text-sm border rounded border-gray-700 text-gray-400 hover:bg-emerald-400 hover:text-black transition"
+    >
+      Download CV
+    </a>
+
+    <a
+      href="mailto:victorjiggy12@gmail.com"
+      class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-emerald-400 transition"
+    >
+      <i class="fas fa-envelope text-green-300 hover:text-black"></i>
+    </a>
+  </div>
+</nav>
+
+
+    <!-- HERO -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-16">
+  <!-- Text -->
+  <div>
+    <div class="inline-block bg-emerald-400/10 text-emerald-400 px-3 py-1 rounded mb-6 text-xs">
+      Front-End Developer
+    </div>
+
+    <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
+      Talk is cheap.<br />Lets Make That Dream True
+    </h1>
+
+    <p class="text-gray-400 mt-4 max-w-xl">
+      I am a web developer,I design and code beautifully simple things,User interactive and I love what I do.
+    </p>
+
+    <div class="mt-8 flex gap-8 items-center text-sm">
+      <div>
+        <div class="text-2xl font-bold text-white">4</div>
+        <div class="text-gray-500 text-xs">Years experience</div>
+      </div>
+      <div>
+        <div class="text-2xl font-bold text-white">13</div>
+        <div class="text-gray-500 text-xs">Projects completed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="flex justify-center md:justify-end">
+    <div class="relative w-full max-w-md md:max-w-lg h-72 sm:h-80 md:h-96 bg-gray-800 rounded overflow-hidden shadow-2xl">
+      <img
+        src="/assets/584830f5cef1014c0b5e4aa1.png"
+        alt="hero"
+        class="w-full h-full object-cover"
+      />
+
+      <!-- Floating tech badges -->
+      <div class="absolute left-2 sm:-left-4 top-6 sm:top-12 bg-black/50 border border-gray-700 p-2 sm:p-3 rounded-full">
+        <img src="assets/tailwindcss-67e41e5e.png" class="w-12 h-12 sm:w-16 sm:h-16" />
+      </div>
+
+      <div class="absolute right-2 sm:-right-4 bottom-6 sm:bottom-16 bg-black/50 border border-gray-700 p-2 sm:p-3 rounded-full">
+        <img src="assets/613b64fe30e8530004ba3a03.png" class="w-12 h-12 sm:w-16 sm:h-16" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="bg-gray-700 py-6">
+  <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 px-4">
+    <img src="assets/OIP (5).webp" class="w-14 h-14 sm:w-16 sm:h-16" />
+    <img src="assets/html5-logo-html-logo-0.png" class="w-14 h-14 sm:w-16 sm:h-16" />
+    <img src="assets/html5-logo-opencode-css-8.png" class="w-14 h-14 sm:w-16 sm:h-16" />
+    <img src="assets/tailwindcss-67e41e5e.png" class="w-14 h-14 sm:w-16 sm:h-16" />
+    <img src="assets/584830f5cef1014c0b5e4aa1.png" class="w-14 h-14 sm:w-16 sm:h-16" />
+    <img src="assets/613b64fe30e8530004ba3a03.png" class="w-14 h-14 sm:w-16 sm:h-16" />
+  </div>
+</div>
+
+
+    <!-- SERVICES -->
+    <section
+  id="services"
+  class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-12 gap-10 py-12 mt-16"
+>
+  <!-- Services cards -->
+  <div class="md:col-span-4 space-y-6">
+    <div class="group bg-gray-800 p-6 rounded-lg shadow-inner transition-colors duration-300 cursor-pointer hover:bg-emerald-400">
+      <h3 class="text-emerald-400 font-medium group-hover:text-white">
+        Design
+      </h3>
+      <p class="text-gray-400 mt-2 text-sm group-hover:text-black">
+        Create digital products with unique ideas.
+      </p>
+    </div>
+
+    <div class="group bg-gray-800 p-6 rounded-lg shadow-inner transition-colors duration-300 cursor-pointer hover:bg-emerald-400">
+      <h3 class="text-white font-medium group-hover:text-green-800">
+        Front-End
+      </h3>
+      <p class="text-gray-400 mt-2 text-sm group-hover:text-black">
+        Develop front-end web using modern stacks.
+      </p>
+    </div>
+
+    <div class="group bg-gray-800 p-6 rounded-lg shadow-inner transition-colors duration-300 cursor-pointer hover:bg-emerald-400">
+      <h3 class="text-white font-medium group-hover:text-green-800">
+        SEO
+      </h3>
+      <p class="text-gray-400 mt-2 text-sm group-hover:text-black">
+        Boost your business with SEO strategies.
+      </p>
+    </div>
+  </div>
+
+  <!-- About text -->
+  <div class="md:col-span-8">
+    <h2 class="text-white text-xl sm:text-2xl font-semibold">
+      Hello! I'm Victor Chukwuemeka
+    </h2>
+
+    <p class="text-gray-400 mt-4 max-w-none md:max-w-2xl leading-relaxed">
+      A passionate and skilled Web Developer with strong expertise in front-end technologies including HTML5, CSS3, JavaScript, React, and Tailwind CSS. He specializes in building clean, responsive, and user-friendly websites that bring digital ideas to life.
+      <br /><br />
+      He is currently pursuing a Bachelor’s degree in Computer Science at Godfrey Okoye University (2022–2027) and already holds four professional certificates in programming and web development, earned through recognized platforms such as Neo Cloud Technologies, TECH-NXT, and Udemy.
+      <br /><br />
+      Since 2022, Victor has worked as a freelance web developer, delivering high-quality solutions for clients while continuously updating his skills with modern tools and industry best practices.
+      <br /><br />
+      In addition to his development work, Victor serves as the Chief Operating Officer (COO) of TechNext, a startup focused on teaching tech skills to the next generation. Victor is driven by continuous learning, innovation, and a commitment to creating impactful digital solutions.
+    </p>
+  </div>
+</section>
+
+
+       <!-- Skill section -->
+    <section aria-label="Skills" class=" p-6 bg-slate-900/50 rounded-2xl backdrop-blur-sm text-slate-100">
+  <div class="text-center mb-16">
+     <h2 class="text-3xl md:text-4xl font-semibold">Skill Level</h2>
+      <p class="text-gray-400 mt-2">My level of still so far</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!-- HTML -->
+    <div class="group skill flex items-center gap-3 p-3 bg-slate-800 rounded-lg transition-colors duration-300 cursor-pointer hover:bg-emerald-400" data-level="92" data-color="#ef4444">
+      <div class="relative w-28 h-28 flex-shrink-0">
+        <div class="circle w-full h-full rounded-full flex items-center justify-center text-sm font-semibold text-white">0%</div>
+      </div>
+      <div class="flex-1">
+        <div class="font-medium group-hover:text-black">HTML & CSS </div>
+        <div class="text-xs text-slate-400 group-hover:text-black">Markup & semantics</div>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="group skill flex items-center gap-3 p-3 bg-slate-800 rounded-lg transition-colors duration-300 cursor-pointer hover:bg-emerald-400" data-level="88" data-color="#2563eb">
+      <div class="relative w-28 h-28 flex-shrink-0">
+        <div class="circle w-full h-full rounded-full flex items-center justify-center text-sm font-semibold text-white">0%</div>
+      </div>
+      <div class="flex-1 ">
+        <div class="font-medium group-hover:text-black ">Javascript</div>
+        <div class="text-xs text-slate-400 group-hover:text-black">Layout & animations</div>
+      </div>
+    </div>
+
+    <!-- PHP -->
+    <div class="group skill flex items-center gap-3 p-3 bg-slate-800 rounded-lg transition-colors duration-300 cursor-pointer hover:bg-emerald-400" data-level="60" data-color="#f59e0b">
+      <div class="relative w-28 h-28 flex-shrink-0">
+        <div class="circle w-full h-full rounded-full flex items-center justify-center text-sm font-semibold text-white">0%</div>
+      </div>
+      <div class="flex-1">
+        <div class="font-medium">Node.js</div>
+        <div class="text-xs text-slate-400">Backend & APIs</div>
+      </div>
+    </div>
+
+    <!-- React -->
+    <div class="skill flex items-center gap-3 p-3 bg-slate-800 rounded-lg" data-level="82" data-color="#7c5cff">
+      <div class="relative w-28 h-28 flex-shrink-0">
+        <div class="circle w-full h-full rounded-full flex items-center justify-center text-sm font-semibold text-white">0%</div>
+      </div>
+      <div class="flex-1">
+        <div class="font-medium">React</div>
+        <div class="text-xs text-slate-400">Components & state</div>
+      </div>
+    </div>
+  </div>
+
+  <section aria-label="Basic Skills" class="max-w-4xl mx-auto p-6 bg-slate-900/50 rounded-2xl backdrop-blur-sm text-slate-100 mt-8">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-lg font-semibold">Basic Skills</h2>
+  </div>
+
+  <div class="space-y-4">
+    <!-- Neat Code -->
+    <div class="skill-bar" data-level="95" data-color="#22c55e">
+      <div class="flex justify-between mb-1">
+        <span class="font-medium">Neat Code</span>
+        <span class="percent text-sm text-slate-400">0%</span>
+      </div>
+      <div class="w-full bg-slate-800 rounded h-3">
+        <div class="progress h-3 rounded bg-green-500 w-0"></div>
+      </div>
+    </div>
+
+    <!-- Functional Code -->
+    <div class="skill-bar" data-level="88" data-color="#3b82f6">
+      <div class="flex justify-between mb-1">
+        <span class="font-medium">Functional Code</span>
+        <span class="percent text-sm text-slate-400">0%</span>
+      </div>
+      <div class="w-full bg-slate-800 rounded h-3">
+        <div class="progress h-3 rounded bg-blue-500 w-0"></div>
+      </div>
+    </div>
+
+    <!-- Debugging -->
+    <div class="skill-bar" data-level="80" data-color="#f59e0b">
+      <div class="flex justify-between mb-1">
+        <span class="font-medium">Debugging</span>
+        <span class="percent text-sm text-slate-400">0%</span>
+      </div>
+      <div class="w-full bg-slate-800 rounded h-3">
+        <div class="progress h-3 rounded bg-yellow-500 w-0"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar" data-level="90" data-color="#569fdf">
+      <div class="flex justify-between mb-1">
+        <span class="font-medium">Team Work</span>
+        <span class="percent text-sm text-slate-400">0%</span>
+      </div>
+      <div class="w-full bg-slate-800 rounded h-3">
+        <div class="progress h-3 rounded bg-green-500 w-0"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</section>
+
+
+   <!-- ================== Latest Works Section ================== -->
+<section class="text-white py-16 px-6 md:px-12 lg:px-20" id="works">
+  <!-- Section Header -->
+  <div class="text-center mb-12 md:mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold">Latest Works</h2>
+    <p class="text-gray-400 mt-2 text-sm md:text-base">Perfect solutions for digital experience</p>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+    <!-- Project 1 -->
+    <div class="bg-[#232323] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+      <img src="assets/Screenshot 2025-12-30 at 14-01-28 frontend.png" class="w-full h-64 md:h-72 lg:h-80 object-cover">
+      <div class="p-5 md:p-6">
+        <h3 class="text-xl md:text-2xl font-bold text-white">JAMVACELECTRONICS</h3>
+        <p class="text-green-400 text-sm mt-1 md:text-base">Electronic store • React</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-[#232323] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+      <img src="assets/Screenshot 2025-12-30 at 14-14-02 EnDasmu — NFT Marketplace (Tailwind Replica).png" alt="Finaco Project" class="w-full h-64 md:h-72 lg:h-80 object-cover">
+      <div class="p-5 md:p-6">
+        <h3 class="text-xl md:text-2xl font-bold text-green-400">Rema EnDasmu</h3>
+        <p class="text-gray-400 text-sm mt-1 md:text-base">Profile • Web • HTML • Tailwind</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-[#232323] rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+      <img src="assets/Screenshot_30-12-2025_14326_focusproject.org.jpeg" alt="Focus Project" class="w-full h-64 md:h-72 lg:h-80 object-cover">
+      <div class="p-5 md:p-6">
+        <h3 class="text-xl md:text-2xl font-bold text-white">Focus</h3>
+        <p class="text-gray-400 text-sm mt-1 md:text-base">Productivity • App • SaaS</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- All Projects -->
+  <div class="text-center mt-10 md:mt-12">
+    <a href="#projects" class="text-green-400 font-semibold hover:underline">ALL PROJECTS</a>
+    <p class="text-gray-500 text-xs md:text-sm mt-2">* Some projects not allowed by NDA. Contact me to see more.</p>
+  </div>
+</section>
+
+
+<!-- ================== Testimonials Section ================== -->
+<!-- ================== Testimonials Section ================== -->
+<section class=" text-white py-20 px-6 lg:px-20" id="testimonial">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold">Testimonials</h2>
+    <p class="text-gray-400 mt-2">What clients say about me</p>
+  </div>
+
+  <!-- Testimonial Slider -->
+ <section class="bg-gray-900 py-16">
+    <div class=" group max-w-4xl mx-auto text-center relative px-6 bg-gray-800 h-[70vh] py-7 rounded-[6px]  transition-colors duration-300 cursor-pointer hover:bg-emerald-400">
+      <!-- Rating -->
+      <p id="testimonial-rating" class="text-green-400 text-lg mb-6 pb-[5%] group-hover:text-white">⭐ 5.0 Rating</p>
+
+      <!-- Quote -->
+      <p id="testimonial-text" class="text-gray-200 italic text-xl leading-relaxed pb-[5%] group-hover:text-black">
+        "Daniel was a real pleasure to work with and we look forward to working with him again."
+      </p>
+
+      <!-- Client Info -->
+      <div class="mt-6 flex flex-col items-center">
+        <img id="testimonial-avatar" 
+             class="w-20 h-20 rounded-full border-2 border-green-400 mb-3">
+        <h4 id="testimonial-author" class="text-white font-semibold group-hover:text-black"></h4>
+        <p id="testimonial-role" class="text-gray-400 text-sm group-hover:text-black"></p>
+      </div>
+
+      <!-- Navigation -->
+      <button id="prev-testimonial" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white text-3xl">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="next-testimonial" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white text-3xl">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+  <!-- Client Avatars -->
+  <div id="testimonial-author" class="flex flex-wrap justify-center gap-8 mt-10">
+    <!-- JS will load author info here -->
+  </div>
+</section>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact" class="max-w-7xl mx-auto px-6 py-16 border-t border-gray-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h4 class="text-white text-2xl font-semibold">Let's make something amazing together.</h4>
+          <p class="mt-6"><a href="#contact" class="text-emerald-400 underline">Start by saying hi</a></p>
+        </div>
+       <form 
+  id="contactForm"
+  class="space-y-4"
+  onsubmit="sendEmail(event)"
+>
+  <input
+    id="email"
+    type="email"
+    placeholder="Your email"
+    class="w-full p-3 bg-gray-800 rounded border border-gray-700 text-white"
+    required
+  />
+
+  <textarea
+    id="message"
+    rows="4"
+    placeholder="Message"
+    class="w-full p-3 bg-gray-800 rounded border border-gray-700 text-white"
+    required
+  ></textarea>
+
+  <div class="flex justify-end">
+    <button
+      type="submit"
+      class="px-5 py-2 bg-emerald-400 text-black rounded font-medium hover:bg-emerald-300 transition"
+    >
+      Say Hi
+    </button>
+  </div>
+</form>
+
+      </div>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
